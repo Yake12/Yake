@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yeiko.yake.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="30dp"
+    android:layout_marginLeft="30dp">
+
+
+    <!--LOGO-->
+
+    <ImageView
+        android:id="@+id/MyImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/image"
+        android:layout_marginBottom="40dp"/>
+
+
+    <!--BIENVENIDA-->
+
+    <TextView
+        android:id="@+id/MyBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a Messenger"
+        android:textColor="#212121"
+        android:textSize="31sp"
+        android:gravity="center"
+        android:layout_marginBottom="35dp"/>
+
+    <!--CORREO-->
+
+    <EditText
+
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#737373"
+        android:hint="Correo electronico"
+        android:layout_marginBottom="21dp"/>
+
+    <EditText
+
+        android:id="@+id/contraseniaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#737373"
+        android:hint="Contraseña"
+        android:layout_marginBottom="45dp"/>
+
+    <Button
+
+        android:id="@+id/iniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#"
+        android:hint="Iniciar Sesion con Facebook"/>
+
+    <Button
+        android:id="@+id/OlvidarContrasenia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0084FF"
+        android:hint="¿Olvidaste tu contraseña?"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+    <Button
+
+        android:id="@+id/cuentaFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0084FF"
+        android:text="¿No Tienes cuenta en Facebook?"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="70dp"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <TextView
+        android:id="@+id/Agradecer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:text=" @copyright by Yake Derechos Reservados"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="72dp"
+        android:layout_margin="50dp"/>
+
+</LinearLayout>
